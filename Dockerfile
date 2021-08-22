@@ -1,4 +1,4 @@
-FROM jgoerzen/debian-base-minimal:buster
+FROM jgoerzen/debian-base-minimal:bullseye
 MAINTAINER John Goerzen <jgoerzen@complete.org>
 COPY setup/ /usr/local/debian-base-setup/
 RUN /usr/local/debian-base-setup/020-debian-base-standard
