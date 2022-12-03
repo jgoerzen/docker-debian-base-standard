@@ -5,10 +5,12 @@ set -x
 
 mv /usr/sbin/policy-rc.d.disabled /usr/sbin/policy-rc.d
 
+echo 'deb http://deb.debian.org/debian bullseye-backports main' >> /etc/apt/sources.list
 apt-get update
 apt-get -y --no-install-recommends install less nano vim-tiny man-db \
         exim4-daemon-light bsd-mailx pwgen gnupg gnupg2 \
         netcat-openbsd socat openssl ssh telnet net-tools wget curl zip unzip
+apt-get -y --no-install-recommends -t bullseye-backports install yggdrasil
 
 apt-get -y -u dist-upgrade
 
