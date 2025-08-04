@@ -1,5 +1,5 @@
 FROM jgoerzen/debian-base-minimal:trixie
-MAINTAINER John Goerzen <jgoerzen@complete.org>
+LABEL org.opencontainers.image.authors="John Goerzen <jgoerzen@complete.org>"
 COPY setup/ /usr/local/debian-base-setup/
 RUN /usr/local/debian-base-setup/020-debian-base-standard
 
